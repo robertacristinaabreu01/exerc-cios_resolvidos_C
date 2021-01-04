@@ -1,1 +1,1 @@
-# exerc-cios_resolvidos_C
+# exerc_resolvidos_C
