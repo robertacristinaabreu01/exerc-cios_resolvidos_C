@@ -1,0 +1,231 @@
+Exercícios com estruturas de  repetição 
+
+1- Faça um algoritmo para mostrar a soma e a média dos 10 primeiros termos da série de Fibonacci: 0 1 1 2 3 5 8 …
+Inicio
+A=0
+B=1
+soma=1
+mostrar A,B
+Para I=3 até 10 faça 
+     inicio
+     N=A+B
+     mostrar N
+     soma=soma+N
+     A=B
+     B=N
+     Fim
+Mostrar “soma: “, soma
+Mostrar “media: “,soma/10
+fim
+
+2- Faça um algoritmo para mostrar os N primeiros múltiplos de um inteiro K, onde N e K são lidos e são números inteiros e positivos. Informar também a soma desses N múltiplos.
+
+Inicio
+soma=0;
+mostrar "Informe N: "
+ler N
+mostrar "Informe K: "
+ler K
+para I=1 até N faça 
+     inicio
+     mult=K*I
+     mostrar  mult
+     soma=soma+mult
+     fim    
+mostrar "soma: ",soma
+fim
+
+
+3- Faça um algoritmo que solicite ao usuário 10 números inteiros e, ao final, informe a quantidade de números ímpares e pares lidos. Calcule também a soma dos números pares e a média dos números ímpares.
+inicio       
+par=0 
+impar=0 
+somaPar=0 
+somaImpar=0
+para cont=1 até 10 faça
+     início
+     mostrar "Digite um valor inteiro: "
+     ler numero
+     se numero MOD 2 = 0 
+     entao inicio
+           par=par+1
+           somaPar=somaPar+numero
+           fim
+     senao inicio
+           impar=impar+1
+           somaImpar=somaImpar+numero
+           fim
+     fim  
+     
+se impar>0 
+entao inicio
+      mediaImpar=somaImpar/impar;
+      mostrar "A media dos numeros impares eh ", mediaImpar
+      fim
+     
+mostrar "Numero de impares: ", impar
+mostrar "Numero de pares: ", par
+mostrar "Soma dos pares: ", somaPar     
+fim
+
+4- Faça um algoritmo que leia um número inteiro e positivo. Se o número lido for menor que 7,  calcule o seu fatorial. Se for maior ou igual a 7, calcule a soma de 1 até o número lido. 
+
+inicio
+soma=0;
+fatorial=1;
+mostrar "Informe o numero: "
+ler N
+se N>0  E  N<7
+entao inicio
+      para I=1 até N faça 
+            fatorial=fatorial*I;
+      mostrar "fatorial: ",fatorial
+      fim
+se  N>=7 
+então inicio       
+      para I=1 até N faça 
+           soma=soma+I;
+      mostrar "soma: ",soma
+      fim    
+fim
+
+5- Faça um programa que calcule e mostre os números primos menores que 100.
+inicio
+para I=2 até 99 faça
+    inicio
+    ehprimo=1;
+    para cont=2 até I-1 faça
+         se I MOD cont = 0 
+         entao  ehprimo=0
+    se ehprimo = 1 
+    entao mostrar "e' primo: ",I
+    fim          
+fim
+
+
+6- Faça um algoritmo que solicite ao usuário para digitar valores numéricos inteiros positivos. Encerre a entrada de dados quando for digitado um número negativo ou zero. Calcule a média dos números positivos digitados.
+inicio
+     soma=0
+     cont=0;
+     mostrar "Digite um numero inteiro (zero ou negativo para sair): "
+     ler numero
+     enquanto numero>0 faça
+          inicio
+          soma=soma+numero;
+          cont=cont+1;
+          mostrar "Digite um numero inteiro positivo: "
+          ler  numero
+          fim
+     se  cont>=1
+     entao inicio
+           media=soma/cont
+           mostrar "A media calculada foi ", media
+           fim
+     senao mostrar "Nenhum valor positivo foi digitado!"
+fim
+
+
+7- Em uma eleição presidencial existem quatro candidatos. Os votos são informados através de números. Os dados utilizados para a contagem dos votos obedecem à seguinte codificação: 
+1,2,3,4 = voto para os respectivos candidatos; 
+5 = voto nulo; 
+6 = voto em branco;
+Elabore um programa que leia o voto de vários eleitores. Como finalizador da entrada de dados, considere o valor zero (valor zero como voto). 
+Ao final, calcule e escreva:
+- total de votos para cada candidato; 
+- total de votos nulos; 
+- total de votos em branco;
+
+inicio
+       conta1=0
+       conta2=0
+       conta3=0
+       conta4=0
+       contaNulo=0
+       contaBranco=0
+       mostrar "Informe o voto do eleitor: "
+       ler voto
+       enquanto voto <> 0 faça
+             inicio
+             se voto<>1 E  voto<>2  E voto<>3 E voto<> 4 E voto<>5 E voto<>6
+             entao mostrar "Voto invalido!"
+             senao se voto=1 
+                       entao conta1=conta1+1
+                       senao se voto=2
+                                 entao conta2=conta2+1
+                            senao se voto=3
+                                      entao conta3=conta3+1
+                                      senao se voto=4
+                                               entao conta4=conta4+1
+                                               senao se voto=5
+                                                         entao contaNulo=contaNulo+1
+                                                         senao se voto=6
+                                                         entao contaBranco=contaBranco +1
+             mostrar "Informe o voto do próximo eleitor: "
+             ler voto                                    
+             fim
+       mostrar "O total de votos para o candidato 1 eh ", conta1
+       mostrar "O total de votos para o candidato 2 eh ", conta2
+       mostrar "O total de votos para o candidato 3 eh ", conta3
+       mostrar "O total de votos para o candidato 4 eh ", conta4
+       mostrar "O total de votos nulos eh ", contaNulo
+       mostrar "O total de votos brancos eh ", contaBranco
+fim
+outra forma de resolver:
+
+inicio
+       conta1=0
+       conta2=0
+       conta3=0
+       conta4=0
+       contaNulo=0
+       contaBranco=0
+       mostrar "Informe o voto do eleitor: "
+       ler voto
+       enquanto voto <> 0 faça
+             inicio
+             se voto<>1 E  voto<>2  E voto<>3 E voto<> 4 E voto<>5 E voto<>6
+             entao mostrar "Voto invalido!"
+             se voto =1 entao conta1=conta1+1
+             se voto =2 entao conta2=conta2+1
+             se voto =3 entao conta3=conta3+1
+             se voto =4 entao conta4=conta4+1
+             se voto =5 entao contaNulo=contaNulo+1
+             se voto =6 entao contaBranco=contaBranco +1
+             mostrar "Informe o voto do próximo eleitor: "
+             ler voto
+             fim
+       mostrar "O total de votos para o candidato 1 eh ", conta1
+       mostrar "O total de votos para o candidato 2 eh ", conta2
+       mostrar "O total de votos para o candidato 3 eh ", conta3
+       mostrar "O total de votos para o candidato 4 eh ", conta4
+       mostrar "O total de votos nulos eh ", contaNulo
+       mostrar "O total de votos brancos eh ", contaBranco
+fim
+
+
+8-  Escreva um programa que leia o código de um aluno e suas três notas. Calcule a média ponderada do aluno, considerando que o peso para a maior nota seja 4 e para as duas restantes, 3. Mostre o código do aluno, suas três notas, a média calculada e uma mensagem "APROVADO" se a média for maior ou igual a 5 e "REPROVADO" se a média for menor que 5. Repita a operação até que seja informado o código 999  para o aluno.
+
+inicio
+mostrar "Informe o codigo do aluno: "
+ler codigo
+enquanto codigo <> 999 faça
+        inicio     
+        mostrar "Informe a nota 1: "
+        ler nota1
+        mostrar "Informe a nota 2: "
+        ler nota2
+        mostrar "Informe a nota 3: "
+        ler nota3
+        se nota1>=nota2  E  nota1>=nota3
+        entao   media=(4*nota1+3*nota2+3*nota3)/10
+        senao se  (nota2>=nota1 E  nota2>=nota3)
+                  entao media=(3*nota1+4*nota2+3*nota3)/10
+                  senao media=(3*nota1+3*nota2+4*nota3)/10
+      mostrar "Codigo do aluno: ", codigo
+      mostrar "Notas: ", nota1, nota2, nota3)
+      Mostrar "Media: ",media
+      Se media>=5
+      Entao mostrar " APROVADO"
+      Senao mostrar " REPROVADO"
+      fim
+fim    
