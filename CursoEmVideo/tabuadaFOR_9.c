@@ -9,7 +9,7 @@ int main()
 
     for(int x = 1; x<=10; ++x){
         //1 x 5 = 5
-        printf("%ix%i = %i\n", x, tabuada, x * tabuada);
+        printf("%ix%i = %i\n", tabuada, x, x * tabuada);
     }
 
     return 0;
