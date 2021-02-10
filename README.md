@@ -19,3 +19,5 @@ https://programacaodescomplicada.wordpress.com/complementar/
 http://www.telecom.uff.br/~marcos/protocolos/www.cic.unb.br/docentes/jacobi/Extensao/ListaExerc.pdf
 
 https://oprofessorleandro.files.wordpress.com/2010/03/coletanea-de-exercicios-resolvidos-em-liguagem-c.pdf
+
+https://www.youtube.com/watch?v=m4jVRROtNPU
