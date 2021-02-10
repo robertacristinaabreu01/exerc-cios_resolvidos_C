@@ -21,3 +21,6 @@ http://www.telecom.uff.br/~marcos/protocolos/www.cic.unb.br/docentes/jacobi/Exte
 https://oprofessorleandro.files.wordpress.com/2010/03/coletanea-de-exercicios-resolvidos-em-liguagem-c.pdf
 
 https://www.youtube.com/watch?v=m4jVRROtNPU
+
+
+https://www.youtube.com/watch?v=Wal10kQKwAE
