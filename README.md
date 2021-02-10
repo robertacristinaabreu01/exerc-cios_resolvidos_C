@@ -24,3 +24,18 @@ https://www.youtube.com/watch?v=m4jVRROtNPU
 
 
 https://www.youtube.com/watch?v=Wal10kQKwAE
+
+
+Bibliotecas C
+
+#include <stdio.h>
+
+
+#include <stdlib.h>
+
+
+#include <locale.h>
+biblioteca que permite colocar acentos
+dentro do void
+setlocale(LC_ALL,"");
+
